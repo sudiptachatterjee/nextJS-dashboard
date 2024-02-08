@@ -1,4 +1,14 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Sudiptas Acme dashboard',
+    default: 'Sudiptas Acme dashboard',
+  },
+  description: 'The official Next.js course dashboard',
+  //metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+};
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
